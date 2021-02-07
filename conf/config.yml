@@ -1,0 +1,36 @@
+palette: Blues
+dpi: 100
+bands:
+  ticket w/o AC:
+    color: red
+    range:
+      - 0
+      - 7
+  readout delayed:
+    color: orange
+    range:
+      - 7
+      - 12
+  solver GLPK failed:
+    color: gray
+    range:
+      - 12
+      - 18
+  CI passed:
+    color: lightgreen
+    range:
+      - 18
+      - 26
+  de-uro runs:
+    color: darkgreen
+    range:
+      - 26
+      - 35
+  CT2 SUPERSTAR!:
+    color: blue
+    range:
+      - 35
+      - 120 # This should be the max possible score
+
+
+
