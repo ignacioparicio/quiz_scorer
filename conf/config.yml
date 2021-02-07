@@ -1,5 +1,5 @@
 palette: Blues
-dpi: 100
+dpi: 150
 bands:
   ticket w/o AC:
     color: red
@@ -30,7 +30,17 @@ bands:
     color: blue
     range:
       - 35
-      - 120 # This should be the max possible score
+      - 70 # This should be the max possible score
+
+# Mock scores to show on template chart. Reuses bands from above
+mock_scores:
+  player_1: 1
+  player_2: 1
+  player_3: 1
+  player_4: 1
+  player_5: 1
+  player_6: 1
+  player_7: 1
 
 
 
