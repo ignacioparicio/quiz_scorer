@@ -1,3 +1,11 @@
+
+# read_from supports
+# - `manual_csvs`: multiple csv files are expected from the different participants.
+#      A csv with the correct answers must exist.
+# - `google_forms`: all scores are expected to be contained in a single csv, exported
+#     from Google forms. There is no need for a correct answers csv.
+read_from: google_forms
+name_col: Your first name # only relevant for google_forms input
 palette: Blues
 dpi: 150
 bands:
@@ -5,32 +13,32 @@ bands:
     color: red
     range:
       - 0
-      - 7
+      - 15
   readout delayed:
     color: orange
     range:
-      - 7
-      - 12
+      - 15
+      - 21
   solver GLPK failed:
     color: gray
     range:
-      - 12
-      - 18
+      - 21
+      - 26
   CI passed:
     color: lightgreen
     range:
-      - 18
       - 26
+      - 38
   de-uro runs:
     color: darkgreen
     range:
-      - 26
-      - 35
+      - 38
+      - 48
   CT2 SUPERSTAR!:
     color: blue
     range:
-      - 35
-      - 70 # This should be the max possible score
+      - 48
+      - 77 # This should be the max possible score
 
 # Mock scores to show on template chart. Reuses bands from above
 mock_scores:
